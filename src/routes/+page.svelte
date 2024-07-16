@@ -13,7 +13,7 @@
   {#each todos as todo}
     <div class="todo">
       <header>
-        <h1>{todo.title}</h1>
+        <h2>{todo.title}</h2>
         <input type="checkbox" value={todo.done}/>
       </header>
       {#if todo.text}
