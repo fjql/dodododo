@@ -16,7 +16,9 @@
         <h1>{todo.title}</h1>
         <input type="checkbox" value={todo.done}/>
       </header>
-      <p>{todo.text}</p>
+      {#if todo.text}
+        <p>{todo.text}</p>
+      {/if}
     </div>
   {/each}
   <div class="todo">
