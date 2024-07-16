@@ -21,8 +21,12 @@
       {/if}
     </div>
   {/each}
-  <div class="todo">
-    add
+  <div class="addtodo">
+    <div class="details">
+      <input type="text" placeholder="Enter Title..."/>
+      <input type="text" placeholder="Enter Text..."/>
+    </div>
+    <button>Add</button>
   </div>
 </main>
 
@@ -52,6 +56,21 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+
+  .addtodo {
+    border: 2px solid rgb(19, 15, 15);
+    padding: .5rem 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .25rem;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
     }
   }
 </style>
